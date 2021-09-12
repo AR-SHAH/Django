@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{%static 'app1/sheet.css'%}">
+    <meta charset="UTF-8">
+    <title>Sign In</title>
+</head>
+<body>
+<h1>Welcome to the page</h1>
+<form action="/success" method="post">
+{% csrf_token %}
+Enter username: <input name='userName'>
+Enter password: <input name='userPassword'>
+<button type='Submit'>Click</button>
+</form>
+
+</body>
+</html>

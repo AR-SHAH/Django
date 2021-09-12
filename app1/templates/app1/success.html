@@ -1,0 +1,13 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{%static 'app1/sheet.css'%}">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Hello Mr. {{users.userName}}</h1>
+<h1> Your Password is: {{users.userPassword}}</h1>
+</body>
+</html>
